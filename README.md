@@ -1,10 +1,31 @@
->**Note**: Please **fork** the current Udacity repository so that you 
+i>**Note**: Please **fork** the current Udacity repository so that you 
 will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
 07/05/2023.
 
 ###Title: Bikeshare Data Analysis
+This program allows users to explore and analyze bikeshare data for three cities: Chicago, New York, and 
+Washington. It provides various statistics and insights about the data based on user input for city, month, 
+and day.
+
+### Prerequisites
+
+- Python 3.9.6
+- Pandas library
+
+### Getting Started
+
+1. Clone the repository or download the Python script.
+2. Make sure you have Python 3.9.6 installed on your machine.
+3. Install the Pandas library if you don't have it already. You can install it using pip:
+
+pip install pandas
+
+4. Run the script using the following command:
+
+python bikeshare.py
+
 
 ### Description
 . Upon running the program, you will be prompted to choose a city: 
