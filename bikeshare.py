@@ -2,6 +2,8 @@
 import time
 import pandas as pd
 from pprint import pprint
+from tabulate import tabulate
+import numpy as np
 
 # Dict containing refrence to raw city files
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -219,22 +221,15 @@ def user_prompt(df):
     
     # Get total number of rows in raw data
     num_rows = dff.shape[0]
-    current_row = 0
+    i = 0
     
-    # Iterate over the rows until user enters a word other than yes
-    while current_row < num_rows:
-        chunk = dff.iloc[current_row:current_row + chunk_size]
-        chunk_dict = chunk.to_dict('records')
-        
-        for row_dict in chunk_dict:
-            pprint(row_dict)
-            
-        user_input = input('\nWould you like to view individual trip data? Enter yes or no.\n')
-        
-        if user_input.lower() != "yes":
+    # Use Tabulate library to iterate over the rows until user enters a word other than yes
+    while True:
+        display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
+        if display_data.lower() != 'yes':
             break
-        
-        current_row += chunk_size
+        print(tabulate(dff.iloc[np.arange(0+i,5+i)], headers ="keys"))
+        i+=5
 
 
 
