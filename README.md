@@ -1,5 +1,4 @@
-i>**Note**: Please **fork** the current Udacity repository so that you 
-will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+
 
 ### Date created
 07/05/2023.
@@ -57,6 +56,8 @@ individual trip data.
 - You can choose to view more chunks or exit the raw data view.
 6. Finally, you will be asked if you want to restart the program. Enter 
 "yes" to restart or any other input to exit.
+7.To view the analysis of Chicago Bikeshare data,open the Tableau 
+workbook.
 
 
 
@@ -66,6 +67,7 @@ bikeshare.py
 chicago.csv
 newyork.csv
 washington.csv
+Citibike.twb
 
 .
 
